@@ -1,0 +1,7 @@
+docker build --tag dash:latest .
+#running interractive after comenting out last couple lines:
+docker run -it -v $(pwd)/apps:/app -p 8050:8050 dash:latest /bin/bash
+#run app
+python basic.py
+
+ 
